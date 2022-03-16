@@ -1,0 +1,11 @@
+{
+    "Customer": "Lepark_5400001",
+    "SSID": "MagneticashAP",
+    "Password": "5050505050",
+    "device_name": "Checkbalance",
+    "device_id": "1",
+    "System_url": "10.0.0.2",
+    "System_port": "4000",
+    "orientation": "right",
+    "Setup": 0
+}
