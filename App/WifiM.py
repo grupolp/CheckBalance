@@ -12,6 +12,9 @@ def ChangeWifi(WIFIN,WIFIP):
     WIFIN=WIFIN.strip()
     WIFIP=WIFIP.strip()
 
+    print(os.system("sudo ifconfig wlan0 up"))
+    sleep(3)
+
     msj=subprocess.check_output("iw dev wlan0 link|grep SSID|awk '{print $2}'",shell=True).decode('utf8')
     red=msj.strip()
     
@@ -54,7 +57,7 @@ def ChangeWifi(WIFIN,WIFIP):
     
     #print('Ahora esta conectado a '+red)
 
-#print(ChangeWifi('RedCajero','5050505050'))
+#print(ChangeWifi('MagneticashAP','5050505050'))
 
 
 
