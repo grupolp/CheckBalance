@@ -399,6 +399,12 @@ def software():
             print('NO conecto al wifi seleccionado')
             FueraDeServicio=True
             CargoFueraServicio()
+
+        
+
+
+        magnetic.Host=data['System_url']#'192.168.1.158'#158
+        magnetic.Port=int(str(data['System_port']))
             
 
         Tarjeta=''
