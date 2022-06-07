@@ -733,8 +733,8 @@ def CargoSetup():
         {"obj":"backgroundImage","is_visible":"true","text":"null","value":"null"},
         {"obj":"logo","is_visible":"false","text":"null","value":"null"},
         {"obj":"outOfService","is_visible":"false","text":"null","value":"null"},
-        {"obj":"outOfOrderTitle","is_visible":"false","text":"Fuera de Servicio","value":"null"},
-        {"obj":"outOfOrderMessage","is_visible":"false","text":"Avise al encargado o espere a que el sistema se reestablezca para poder operar<br>Gracias!","value":"null"},
+        {"obj":"outOfOrderTitle","is_visible":"false","text":"","value":"null"},
+        {"obj":"outOfOrderMessage","is_visible":"false","text":"","value":"null"},
         {"obj":"balance","is_visible":"false","text":"null","value":"null"},
         {"obj":"promociones","is_visible":"false","text":"null","value":"null"},
         {"obj":"btnTarjeta","is_visible":"false","text":"null","value":"null"},
@@ -818,8 +818,8 @@ def CargoWait():
         {"obj":"backgroundImage","is_visible":"true","text":"null","value":"null"},
         {"obj":"logo","is_visible":"true","text":"null","value":"null"},
         {"obj":"outOfService","is_visible":"false","text":"null","value":"null"},
-        {"obj":"outOfOrderTitle","is_visible":"false","text":"Fuera de Servicio","value":"null"},
-        {"obj":"outOfOrderMessage","is_visible":"false","text":"Avise al encargado o espere a que el sistema se reestablezca para poder operar<br>Gracias!","value":"null"},
+        {"obj":"outOfOrderTitle","is_visible":"false","text":"","value":"null"},
+        {"obj":"outOfOrderMessage","is_visible":"false","text":"","value":"null"},
         {"obj":"balance","is_visible":"false","text":"null","value":"null"},
         {"obj":"promociones","is_visible":"false","text":"null","value":"null"},
         {"obj":"btnTarjeta","is_visible":"false","text":"null","value":"null"},
@@ -895,8 +895,8 @@ def CargoWait2():
         {"obj":"backgroundImage","is_visible":"true","text":"null","value":"null"},
         {"obj":"logo","is_visible":"true","text":"null","value":"null"},
         {"obj":"outOfService","is_visible":"false","text":"null","value":"null"},
-        {"obj":"outOfOrderTitle","is_visible":"false","text":"Fuera de Servicio","value":"null"},
-        {"obj":"outOfOrderMessage","is_visible":"false","text":"Avise al encargado o espere a que el sistema se reestablezca para poder operar<br>Gracias!","value":"null"},
+        {"obj":"outOfOrderTitle","is_visible":"false","text":"","value":"null"},
+        {"obj":"outOfOrderMessage","is_visible":"false","text":"","value":"null"},
         {"obj":"balance","is_visible":"false","text":"null","value":"null"},
         {"obj":"promociones","is_visible":"false","text":"null","value":"null"},
         {"obj":"btnTarjeta","is_visible":"false","text":"null","value":"null"},
@@ -970,8 +970,8 @@ def CargoFueraServicio():
         {"obj":"backgroundImage","is_visible":"true","text":"null","value":"null"},
         {"obj":"logo","is_visible":"true","text":"null","value":"null"},
         {"obj":"outOfService","is_visible":"true","text":"null","value":"null"},
-        {"obj":"outOfOrderTitle","is_visible":"true","text":"Fuera de Servicio","value":"null"},
-        {"obj":"outOfOrderMessage","is_visible":"true","text":"Avise al encargado o espere a que el sistema se reestablezca para poder operar<br>Gracias!","value":"null"},
+        {"obj":"outOfOrderTitle","is_visible":"true","text":"","value":"null"},
+        {"obj":"outOfOrderMessage","is_visible":"true","text":"","value":"null"},
         {"obj":"balance","is_visible":"false","text":"null","value":"null"},
         {"obj":"promociones","is_visible":"false","text":"null","value":"null"},
         {"obj":"btnTarjeta","is_visible":"false","text":"null","value":"null"},
@@ -1052,8 +1052,8 @@ def ConsultaEspecial():
                     data=magnetic.movements(Tarjeta[-14:])#database.GetHistory(Tarjeta)
                     t=Tarjeta
                 else:
-                    if r['msg']=='card is not in database':
-                        r['msg']='Su tarjeta no esta en el sistema'
+                    #if r['msg']=='card is not in database':
+                        #r['msg']='Su tarjeta no esta en el sistema'
 
                     #ruta=rutaSin+'&btnBackFromConsultaDeSaldo=true&finTransaccionError=true&msjError='+str(r['msg'])#'index.html?&noIlustraciones=true&nfc='+ nfc +'&mercadoPago='+mercadoPago+'&swipeCard='+swipeCard+'&scanApp='+scanApp+'&saldo='+ str(0) +'&simbolo=$&newCardPrice='+ str(newCardPrice)+'&finTransaccionError=true&msjError='+str(r['msg'])
                     #Tarjeta=''
@@ -1069,7 +1069,7 @@ def ConsultaEspecial():
 
             else:
                 if r['msg']=='Rejected card!!!':
-                        r['msg']='Tarjeta restringida !'                                                
+                        #r['msg']='Tarjeta restringida !'                                                
                         #ruta=rutaSin+'&btnBackFromConsultaDeSaldo=true&finTransaccionError=true&msjError='+str(r['msg'])#'index.html?&noIlustraciones=true&nfc='+ nfc +'&mercadoPago='+mercadoPago+'&swipeCard='+swipeCard+'&scanApp='+scanApp+'&saldo='+ str(0) +'&simbolo=$&newCardPrice='+ str(newCardPrice)+'&finTransaccionError=true&msjError='+str(r['msg'])
                         #Tarjeta=''
                         #CambioVentana(window)
